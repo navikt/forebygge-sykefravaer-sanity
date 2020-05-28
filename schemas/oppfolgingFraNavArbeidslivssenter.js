@@ -1,6 +1,9 @@
+import { FiFolder, FiEdit } from "react-icons/fi";
+
 export default {
     name: 'oppfolging-fra-nav-arbeidslivssenter',
     title: 'Oppfølging fra NAV Arbeidslivssenter',
+    icon: FiFolder,
     type: 'document',
     fields: [
         {
@@ -73,7 +76,14 @@ export default {
                     preview: {
                         select: {
                             title: 'bodyContent'
-                        }
+                        },
+                        prepare(selection){
+                            const { title } = selection;
+                            return {
+                                title: title[0].children[0].text,
+                                media: FiEdit,
+                            }
+                        },
                     }
                 }
             ],

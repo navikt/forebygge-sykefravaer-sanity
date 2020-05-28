@@ -11,6 +11,8 @@ import radElement from './rad-element'
 import digitaleTjenester from './digitaleTjenester'
 import alertstripe from './alertstripe'
 import oppfolgingFraNavArbeidslivssenter from './oppfolgingFraNavArbeidslivssenter'
+import helseIArbeid from './helseIArbeid';
+import iaAvtalen from './iaAvtalen';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -21,14 +23,15 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
-    alertstripe,
-    radElement,
     vihjelperderemed,
     digitaleTjenester,
     oppfolgingFraNavArbeidslivssenter,
-
+    helseIArbeid,
+    iaAvtalen,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
-    blockContent
+    alertstripe,
+    radElement,
+    blockContent,
   ])
 })

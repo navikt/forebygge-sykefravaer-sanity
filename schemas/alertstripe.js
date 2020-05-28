@@ -1,3 +1,5 @@
+import { FiAlertTriangle } from "react-icons/fi";
+
 export default {
     name: 'alert-stripe',
     title: 'Alert Stripe',
@@ -44,6 +46,13 @@ export default {
     preview: {
         select: {
             title: 'innhold'
+        },
+        prepare(selection) {
+            const { title } = selection;
+            return {
+                title: title[0].children[0].text,
+                media: FiAlertTriangle,
+            }
         }
     }
 }
