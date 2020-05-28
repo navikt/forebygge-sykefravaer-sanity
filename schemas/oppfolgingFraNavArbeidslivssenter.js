@@ -1,0 +1,83 @@
+export default {
+    name: 'oppfolging-fra-nav-arbeidslivssenter',
+    title: 'Oppfølging fra NAV Arbeidslivssenter',
+    type: 'document',
+    fields: [
+        {
+            name: 'mainImage',
+            title: 'Document ikon',
+            type: 'image',
+            options: {
+                hotspot: true
+            }
+        },
+        {
+            name: 'title',
+            title: 'Tittel',
+            type: 'string'
+        },
+        {
+            name: 'alertstripe',
+            title: 'alertstripe',
+            type: 'array',
+            list: true,
+            of: [
+                {
+                    type: 'alert-stripe'
+                },
+
+            ],
+        },
+        {
+            name: 'body',
+            title: 'Innhold',
+            type: 'array',
+            list: true,
+            of: [
+                {
+                    name: 'section',
+                    title: 'Innhold',
+                    type: 'object',
+                    fields: [
+                        {
+                            name: 'color',
+                            title: 'Bakgrunnsfarge',
+                            type: 'array',
+                            of: [
+                                {
+                                    type: 'string'
+                                }
+                            ],
+                            options: {
+                                list: [
+                                    {
+                                        title: 'Hvit bakgrunn', value: '#FFFFFF'
+                                    },
+                                    {
+                                        title: 'Blå bakgrunn', value: '#CCE1F3'
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            name: 'publishedAt',
+                            title: 'Publisert',
+                            type: 'datetime'
+                        },
+                        {
+                            name: 'bodyContent',
+                            title: 'Innhold',
+                            type: 'blockContent'
+                        }
+                    ],
+                    preview: {
+                        select: {
+                            title: 'bodyContent'
+                        }
+                    }
+                }
+            ],
+
+        }
+    ]
+}
