@@ -20,6 +20,11 @@ export default {
             type: 'string'
         },
         {
+            name: 'priority',
+            title: 'prioritet',
+            type: 'number'
+        },
+        {
             name: 'alertstripe',
             title: 'alertstripe',
             type: 'array',
@@ -42,6 +47,32 @@ export default {
                     title: 'Innhold',
                     type: 'object',
                     fields: [
+                        {
+                          name: 'title',
+                          title: 'Tittel',
+                          type: 'string'
+                        },
+                        {
+
+                            name: 'colorTitle',
+                            title: 'Bakgrunnsfarge tittel',
+                            type: 'array',
+                            of: [
+                                {
+                                    type: 'string'
+                                }
+                            ],
+                            options: {
+                                list: [
+                                    {
+                                        title: 'Hvit bakgrunn', value: '#FFFFFF'
+                                    },
+                                    {
+                                        title: 'Blå bakgrunn', value: '#CCE1F3'
+                                    }
+                                ]
+                            }
+                        },
                         {
                             name: 'color',
                             title: 'Bakgrunnsfarge',
@@ -75,12 +106,14 @@ export default {
                     ],
                     preview: {
                         select: {
-                            title: 'bodyContent'
+                            title: 'title',
+                            content: 'bodyContent'
                         },
                         prepare(selection){
-                            const { title } = selection;
+                            const { title, content } = selection;
+                            const preview = title && title.length > 0 ? title : content[0].children[0].text;
                             return {
-                                title: title[0].children[0].text,
+                                title: preview,
                                 media: FiEdit,
                             }
                         },

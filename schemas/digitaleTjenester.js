@@ -17,6 +17,11 @@ export default {
             type: 'string'
         },
         {
+            name: 'priority',
+            title: 'prioritet',
+            type: 'number'
+        },
+        {
             name: 'hovedliste',
             title: 'Liste elementer',
             type: 'array',

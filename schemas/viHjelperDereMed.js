@@ -1,6 +1,6 @@
 import React from 'react';
 import directionSign from '../img/direction-sign.svg';
-import { FiFolder, FiCheckCircle } from "react-icons/fi";
+import { FiFolder, FiCheckCircle, FiEdit } from "react-icons/fi";
 import Thumbnail from "../utils/Thumbnail";
 
 export default {
@@ -13,6 +13,11 @@ export default {
             name: 'title',
             title: 'Tittel',
             type: 'string',
+        },
+        {
+            name: 'priority',
+            title: 'prioritet',
+            type: 'number'
         },
         {
             name: 'publishedAt',
@@ -91,9 +96,62 @@ export default {
             ],
         },
         {
-            name: 'footerContent',
-            title: 'Footer innhold',
-            type: 'blockContent',
+            name: 'footer',
+            title: 'Innhold',
+            type: 'array',
+            list: true,
+            of: [
+                {
+                    name: 'section',
+                    title: 'Innhold',
+                    type: 'object',
+                    fields: [
+                        {
+                            name: 'color',
+                            title: 'Bakgrunnsfarge',
+                            type: 'array',
+                            of: [
+                                {
+                                    type: 'string'
+                                }
+                            ],
+                            options: {
+                                list: [
+                                    {
+                                        title: 'Hvit bakgrunn', value: '#FFFFFF'
+                                    },
+                                    {
+                                        title: 'Blå bakgrunn', value: '#CCE1F3'
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            name: 'publishedAt',
+                            title: 'Publisert',
+                            type: 'datetime'
+                        },
+                        {
+                            name: 'bodyContent',
+                            title: 'Innhold',
+                            type: 'blockContent'
+                        }
+                    ],
+                    preview: {
+                        select: {
+                            title: 'bodyContent'
+                        },
+                        prepare(selection){
+                            const { title } = selection;
+                            return {
+                                title: title[0].children[0].text,
+                                media: FiEdit,
+                            }
+                        },
+                    }
+                }
+            ],
+
         }
 
     ],

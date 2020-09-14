@@ -1,19 +1,38 @@
 {
   "root": true,
-  "project": {
-    "name": "Forebygge-sykefravaer-sanity"
-  },
   "api": {
     "projectId": "er31zvh0",
     "dataset": "production"
   },
+  "project": {
+    "name": "Forebygge-sykefravaer-sanity"
+  },
+  "__experimental_spaces": [
+    {
+      "name": "production",
+      "title": "produksjon",
+      "api": {
+        "projectId": "er31zvh0",
+        "dataset": "production"
+      }
+    },
+    {
+      "name": "development",
+      "title": "development",
+      "api": {
+        "projectId": "er31zvh0",
+        "dataset": "development"
+      }
+    }
+  ],
   "plugins": [
     "@sanity/base",
     "@sanity/components",
     "@sanity/default-layout",
     "@sanity/default-login",
     "@sanity/desk-tool",
-    "@sanity/color-input"
+    "@sanity/color-input",
+    "@sanity/vision"
   ],
   "env": {
     "development": {
