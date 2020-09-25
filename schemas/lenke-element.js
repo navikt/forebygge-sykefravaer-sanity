@@ -5,13 +5,18 @@ export default {
 
     fields: [
         {
+            name: 'lenketekst',
+            title: 'Lenketekst',
+            type: 'string'
+        },
+        {
             name: 'href',
             title: 'URL',
             type: 'string'
         },
         {
-            name: 'lenketekst',
-            title: 'Lenketekst',
+            name: 'undertekst',
+            title: 'Undertekst',
             type: 'string'
         },
         {

@@ -27,16 +27,11 @@ export default {
       type: "blockContent"
     },
     {
-      name: "lenkelisteTittel",
-      title: "Tittel for liste med lenker",
-      type: "string",
-    },
-    {
-      name: "lenkeliste",
-      title: "Liste lenker",
+      name: "lenkesamlingListe",
+      title: "Lenkesamling liste",
       type: "array",
       list: true,
-      of: [{ type: "lenke-element" }],
-    },
+      of: [{ type: "lenkesamling" }],
+    }
   ],
 };
