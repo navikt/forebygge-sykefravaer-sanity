@@ -4,6 +4,11 @@ export default {
   type: "document",
   fields: [
     {
+      name: "priority",
+      title: "prioritet",
+      type: "number",
+    },
+    {
       name: "mainImage",
       title: "Dokument ikon",
       type: "image",
@@ -17,9 +22,9 @@ export default {
       type: "string",
     },
     {
-      name: "priority",
-      title: "prioritet",
-      type: "number",
+      name: "ingress",
+      title: "Ingress",
+      type: "blockContent"
     },
     {
       name: "lenkelisteTittel",
