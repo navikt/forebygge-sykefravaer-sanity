@@ -29,6 +29,15 @@ export default {
             of: [
                 {type: 'rad-element'}
             ]
+        },
+    {
+            name: 'linkeliste',
+            title: 'Liste lenker',
+            type: 'array',
+            list: true,
+            of: [
+                {type: 'lenke-element'}
+            ]
         }
     ]
 }

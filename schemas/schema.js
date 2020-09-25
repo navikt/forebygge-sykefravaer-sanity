@@ -8,6 +8,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import blockContent from './blockContent'
 import vihjelperderemed from './viHjelperDereMed'
 import radElement from './rad-element'
+import lenkeElement from './lenke-element'
 import digitaleTjenester from './digitaleTjenester'
 import webinarOgKurs from './webinarOgKurs'
 import alertstripe from './alertstripe'
@@ -34,6 +35,7 @@ export default createSchema({
     // { type: 'typename' } in other document schemas
     alertstripe,
     radElement,
+    lenkeElement,
     blockContent,
   ])
 })
