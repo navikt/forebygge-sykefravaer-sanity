@@ -9,6 +9,7 @@ import blockContent from './blockContent'
 import vihjelperderemed from './viHjelperDereMed'
 import radElement from './rad-element'
 import digitaleTjenester from './digitaleTjenester'
+import webinarOgKurs from './webinarOgKurs'
 import alertstripe from './alertstripe'
 import oppfolgingFraNavArbeidslivssenter from './oppfolgingFraNavArbeidslivssenter'
 import helseIArbeid from './helseIArbeid';
@@ -25,6 +26,7 @@ export default createSchema({
     // in the studio.
     vihjelperderemed,
     digitaleTjenester,
+    webinarOgKurs,
     oppfolgingFraNavArbeidslivssenter,
     helseIArbeid,
     iaAvtalen,
