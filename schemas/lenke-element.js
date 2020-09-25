@@ -5,19 +5,19 @@ export default {
 
     fields: [
         {
-            name: 'title',
-            title: 'Tittel',
+            name: 'href',
+            title: 'URL',
+            type: 'string'
+        },
+        {
+            name: 'lenketekst',
+            title: 'Lenketekst',
             type: 'string'
         },
         {
             name: 'publishedAt',
             title: 'Publisert',
             type: 'datetime'
-        },
-        {
-            name: 'body',
-            title: 'Body',
-            type: 'blockContent'
         }
     ],
 }
