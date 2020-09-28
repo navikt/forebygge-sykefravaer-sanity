@@ -23,6 +23,11 @@ export default {
             name: 'publishedAt',
             title: 'Publisert',
             type: 'datetime'
-        }
+        },
+        {
+            name: 'ikon',
+            title: 'Ikon',
+            type: 'image'
+        },
     ],
 }
