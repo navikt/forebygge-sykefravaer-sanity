@@ -1,22 +1,22 @@
 export default {
-    name: 'lenke-element',
-    title: 'lenke element',
+    name: 'lenke',
+    title: 'Lenke',
     type: 'object',
 
     fields: [
         {
-            name: 'lenketekst',
-            title: 'Lenketekst',
-            type: 'string'
-        },
-        {
-            name: 'href',
-            title: 'URL',
+            name: 'tekst',
+            title: 'Tekst',
             type: 'string'
         },
         {
             name: 'undertekst',
             title: 'Undertekst',
+            type: 'string'
+        },
+        {
+            name: 'href',
+            title: 'URL',
             type: 'string'
         },
         {

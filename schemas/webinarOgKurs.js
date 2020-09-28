@@ -27,8 +27,8 @@ export default {
       type: "blockContent"
     },
     {
-      name: "lenkesamlingListe",
-      title: "Lenkesamling liste",
+      name: "lenkesamlinger",
+      title: "Lenkesamlinger",
       type: "array",
       list: true,
       of: [{ type: "lenkesamling" }],

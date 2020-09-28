@@ -5,7 +5,7 @@ export default {
 
     fields: [
         {
-            name: "lenkelisteTittel",
+            name: "tittel",
             title: "Tittel for liste med lenker",
             type: "string",
         }, {
@@ -14,11 +14,11 @@ export default {
             type: "string",
         },
         {
-            name: "lenkeliste",
-            title: "Liste lenker",
+            name: "lenker",
+            title: "Lenker",
             type: "array",
             list: true,
-            of: [{ type: "lenke-element" }],
+            of: [{ type: "lenke" }],
         }
     ],
 }
