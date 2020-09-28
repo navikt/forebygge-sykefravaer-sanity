@@ -7,7 +7,8 @@ export default {
         {
             name: 'tekst',
             title: 'Tekst',
-            type: 'string'
+            type: 'string',
+            validation: Rule => Rule.required(),
         },
         {
             name: 'undertekst',
@@ -17,12 +18,8 @@ export default {
         {
             name: 'href',
             title: 'URL',
-            type: 'string'
-        },
-        {
-            name: 'publishedAt',
-            title: 'Publisert',
-            type: 'datetime'
+            type: 'string',
+            validation: Rule => Rule.required(),
         },
         {
             name: 'ikon',

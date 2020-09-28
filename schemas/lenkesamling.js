@@ -8,6 +8,7 @@ export default {
             name: "tittel",
             title: "Tittel for liste med lenker",
             type: "string",
+            validation: Rule => Rule.required(),
         }, {
             name: "undertekst",
             title: "Tekst som kommer under tittel",
@@ -19,6 +20,7 @@ export default {
             type: "array",
             list: true,
             of: [{ type: "lenke" }],
+            validation: Rule => Rule.required(),
         }
     ],
 }
