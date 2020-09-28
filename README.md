@@ -18,6 +18,9 @@ Sanity er et CMS, altså et system der redaktører kan endre tekster uten å gå
  - `yarn`
  - `sanity start`
 
+## Deploy
+Kjør `sanity deploy`
+
 ## Relevante lenker
  - Prosjektet administreres her: https://manage.sanity.io/projects/er31zvh0
  - [Sanity studio](https://forebygge-sykefravaer.sanity.studio/) - det er her man endrer og publiserer tekster
