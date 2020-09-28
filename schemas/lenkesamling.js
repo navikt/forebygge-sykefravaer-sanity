@@ -8,6 +8,10 @@ export default {
             name: "lenkelisteTittel",
             title: "Tittel for liste med lenker",
             type: "string",
+        }, {
+            name: "undertekst",
+            title: "Tekst som kommer under tittel",
+            type: "string",
         },
         {
             name: "lenkeliste",
