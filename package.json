@@ -25,7 +25,7 @@
     "@sanity/vision": "^2.0.1",
     "caniuse-lite": "^1.0.30001148",
     "prop-types": "^15.6",
-    "react": "^16.2",
+    "react": "^16.13.1",
     "react-dom": "^16.2",
     "react-icons": "^3.11.0",
     "react-is": "^16.13.1",
