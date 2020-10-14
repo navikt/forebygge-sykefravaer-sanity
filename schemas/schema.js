@@ -16,6 +16,7 @@ import alertstripe from './alertstripe'
 import oppfolgingFraNavArbeidslivssenter from './oppfolgingFraNavArbeidslivssenter'
 import helseIArbeid from './helseIArbeid';
 import iaAvtalen from './iaAvtalen';
+import kurspamelding from "./kurspamelding";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -36,6 +37,7 @@ export default createSchema({
     // { type: 'typename' } in other document schemas
     alertstripe,
     radElement,
+    kurspamelding,
     lenkesamling,
     lenkeElement,
     blockContent,

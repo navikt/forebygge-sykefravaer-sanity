@@ -28,6 +28,11 @@ export default {
       type: "blockContent"
     },
     {
+      name: "kurspamelding",
+      title: "Kurspåmelding",
+      type: "kurspamelding",
+    },
+    {
       name: "lenkesamlinger",
       title: "Lenkesamlinger",
       type: "array",
