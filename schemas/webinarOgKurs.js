@@ -33,6 +33,11 @@ export default {
       type: "kurspamelding",
     },
     {
+      name: "tidligerenettkurs",
+      title: "Tidligere nettkurs",
+      type: "tidligerenettkurs"
+    },
+    {
       name: "lenkesamlinger",
       title: "Lenkesamlinger",
       type: "array",
