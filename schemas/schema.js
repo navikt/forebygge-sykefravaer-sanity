@@ -17,6 +17,7 @@ import oppfolgingFraNavArbeidslivssenter from './oppfolgingFraNavArbeidslivssent
 import helseIArbeid from './helseIArbeid';
 import iaAvtalen from './iaAvtalen';
 import kurspamelding from "./kurspamelding";
+import tidligerenettkurs from "./tidligerenettkurs";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -38,6 +39,7 @@ export default createSchema({
     alertstripe,
     radElement,
     kurspamelding,
+    tidligerenettkurs,
     lenkesamling,
     lenkeElement,
     blockContent,
