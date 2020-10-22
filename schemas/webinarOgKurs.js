@@ -36,13 +36,6 @@ export default {
       name: "tidligerenettkurs",
       title: "Tidligere nettkurs",
       type: "tidligerenettkurs"
-    },
-    {
-      name: "lenkesamlinger",
-      title: "Lenkesamlinger",
-      type: "array",
-      list: true,
-      of: [{ type: "lenkesamling" }],
     }
   ],
 };

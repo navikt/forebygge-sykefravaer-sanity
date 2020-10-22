@@ -8,7 +8,6 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import blockContent from './blockContent'
 import vihjelperderemed from './viHjelperDereMed'
 import radElement from './rad-element'
-import lenkesamling from './lenkesamling'
 import lenkeElement from './lenke'
 import digitaleTjenester from './digitaleTjenester'
 import webinarOgKurs from './webinarOgKurs'
@@ -40,7 +39,6 @@ export default createSchema({
     radElement,
     kurspamelding,
     tidligerenettkurs,
-    lenkesamling,
     lenkeElement,
     blockContent,
   ])
