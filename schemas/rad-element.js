@@ -23,6 +23,11 @@ export default {
             type: 'datetime'
         },
         {
+            name: 'nyhet',
+            title: 'Marker som nyhet',
+            type: 'boolean'
+        },
+        {
             name: 'body',
             title: 'Body',
             type: 'blockContent'
