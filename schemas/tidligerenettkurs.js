@@ -5,27 +5,28 @@ export default {
 
     fields: [
         {
-            name: "tittel",
-            title: "Tittel for tidligere nettkurs",
-            type: "string",
-            validation: Rule => Rule.required(),
-        }, {
-            name: "nyestopptakUndertekst",
-            title: "Undertekst nyeste opptak",
-            type: "string",
+            name: 'tittel',
+            title: 'Tittel for tidligere nettkurs',
+            type: 'string',
+            validation: (Rule) => Rule.required(),
         },
         {
-            name: "alleopptakUndertekst",
-            title: "Undertekst alle opptak",
-            type: "string",
+            name: 'nyestopptakUndertekst',
+            title: 'Undertekst nyeste opptak',
+            type: 'string',
         },
         {
-            name: "lenker",
-            title: "Lenker alle opptak",
-            type: "array",
+            name: 'alleopptakUndertekst',
+            title: 'Undertekst alle opptak',
+            type: 'string',
+        },
+        {
+            name: 'lenker',
+            title: 'Lenker alle opptak',
+            type: 'array',
             list: true,
-            of: [{ type: "lenke" }],
-            validation: Rule => Rule.required(),
-        }
+            of: [{ type: 'lenke' }],
+            validation: (Rule) => Rule.required(),
+        },
     ],
-}
+};

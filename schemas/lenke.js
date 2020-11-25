@@ -8,23 +8,23 @@ export default {
             name: 'tekst',
             title: 'Tekst',
             type: 'string',
-            validation: Rule => Rule.required(),
+            validation: (Rule) => Rule.required(),
         },
         {
             name: 'undertekst',
             title: 'Undertekst',
-            type: 'string'
+            type: 'string',
         },
         {
             name: 'href',
             title: 'URL',
             type: 'string',
-            validation: Rule => Rule.required(),
+            validation: (Rule) => Rule.required(),
         },
         {
             name: 'ikon',
             title: 'Ikon',
-            type: 'image'
+            type: 'image',
         },
     ],
-}
+};

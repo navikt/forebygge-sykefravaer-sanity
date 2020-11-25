@@ -1,4 +1,4 @@
-import { FiFolder } from "react-icons/fi";
+import { FiFolder } from 'react-icons/fi';
 
 export default {
     name: 'helseIArbeid',
@@ -9,23 +9,22 @@ export default {
         {
             name: 'mainImage',
             title: 'Dokument ikon',
-            type: 'image'
+            type: 'image',
         },
         {
             name: 'title',
             title: 'Tittel',
-            type: 'string'
+            type: 'string',
         },
         {
             name: 'priority',
             title: 'prioritet',
-            type: 'number'
+            type: 'number',
         },
         {
             name: 'body',
             title: 'Innhold',
-            type: 'blockContent'
-        }
+            type: 'blockContent',
+        },
     ],
-
-}
+};

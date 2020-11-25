@@ -1,4 +1,4 @@
-import { FiAlertTriangle } from "react-icons/fi";
+import { FiAlertTriangle } from 'react-icons/fi';
 
 export default {
     name: 'alert-stripe',
@@ -11,48 +11,51 @@ export default {
             type: 'array',
             of: [
                 {
-                    type: 'string'
-                }
+                    type: 'string',
+                },
             ],
             options: {
                 list: [
                     {
-                        title: 'info', value: 'info'
+                        title: 'info',
+                        value: 'info',
                     },
                     {
-                        title: 'suksess', value: 'suksess'
+                        title: 'suksess',
+                        value: 'suksess',
                     },
                     {
-                        title: 'advarsel', value: 'advarsel'
+                        title: 'advarsel',
+                        value: 'advarsel',
                     },
                     {
-                        title: 'feil', value: 'feil'
-                    }
-                ]
-            }
-
+                        title: 'feil',
+                        value: 'feil',
+                    },
+                ],
+            },
         },
         {
             name: 'publishedAt',
             title: 'Publisert',
-            type: 'datetime'
+            type: 'datetime',
         },
         {
             name: 'innhold',
             title: 'Tekst innhold',
-            type: 'blockContent'
-        }
+            type: 'blockContent',
+        },
     ],
     preview: {
         select: {
-            title: 'innhold'
+            title: 'innhold',
         },
         prepare(selection) {
             const { title } = selection;
             return {
                 title: title[0].children[0].text,
                 media: FiAlertTriangle,
-            }
-        }
-    }
-}
+            };
+        },
+    },
+};

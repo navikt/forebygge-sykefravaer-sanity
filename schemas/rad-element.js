@@ -9,28 +9,28 @@ export default {
             title: 'Rad bilde',
             type: 'image',
             options: {
-                hotspot: true
-            }
+                hotspot: true,
+            },
         },
         {
             name: 'title',
             title: 'Tittel',
-            type: 'string'
+            type: 'string',
         },
         {
             name: 'publishedAt',
             title: 'Publisert',
-            type: 'datetime'
+            type: 'datetime',
         },
         {
             name: 'nyhet',
             title: 'Marker som nyhet',
-            type: 'boolean'
+            type: 'boolean',
         },
         {
             name: 'body',
             title: 'Body',
-            type: 'blockContent'
-        }
+            type: 'blockContent',
+        },
     ],
-}
+};

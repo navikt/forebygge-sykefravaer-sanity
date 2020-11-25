@@ -1,4 +1,4 @@
-import { FiFolder, FiEdit } from "react-icons/fi";
+import { FiFolder, FiEdit } from 'react-icons/fi';
 
 export default {
     name: 'oppfolging-fra-nav-arbeidslivssenter',
@@ -11,18 +11,18 @@ export default {
             title: 'Document ikon',
             type: 'image',
             options: {
-                hotspot: true
-            }
+                hotspot: true,
+            },
         },
         {
             name: 'title',
             title: 'Tittel',
-            type: 'string'
+            type: 'string',
         },
         {
             name: 'priority',
             title: 'prioritet',
-            type: 'number'
+            type: 'number',
         },
         {
             name: 'alertstripe',
@@ -31,9 +31,8 @@ export default {
             list: true,
             of: [
                 {
-                    type: 'alert-stripe'
+                    type: 'alert-stripe',
                 },
-
             ],
         },
         {
@@ -48,30 +47,31 @@ export default {
                     type: 'object',
                     fields: [
                         {
-                          name: 'title',
-                          title: 'Tittel',
-                          type: 'string'
+                            name: 'title',
+                            title: 'Tittel',
+                            type: 'string',
                         },
                         {
-
                             name: 'colorTitle',
                             title: 'Bakgrunnsfarge tittel',
                             type: 'array',
                             of: [
                                 {
-                                    type: 'string'
-                                }
+                                    type: 'string',
+                                },
                             ],
                             options: {
                                 list: [
                                     {
-                                        title: 'Hvit bakgrunn', value: '#FFFFFF'
+                                        title: 'Hvit bakgrunn',
+                                        value: '#FFFFFF',
                                     },
                                     {
-                                        title: 'Blå bakgrunn', value: '#CCE1F3'
-                                    }
-                                ]
-                            }
+                                        title: 'Blå bakgrunn',
+                                        value: '#CCE1F3',
+                                    },
+                                ],
+                            },
                         },
                         {
                             name: 'color',
@@ -79,48 +79,50 @@ export default {
                             type: 'array',
                             of: [
                                 {
-                                    type: 'string'
-                                }
+                                    type: 'string',
+                                },
                             ],
                             options: {
                                 list: [
                                     {
-                                        title: 'Hvit bakgrunn', value: '#FFFFFF'
+                                        title: 'Hvit bakgrunn',
+                                        value: '#FFFFFF',
                                     },
                                     {
-                                        title: 'Blå bakgrunn', value: '#CCE1F3'
-                                    }
-                                ]
-                            }
+                                        title: 'Blå bakgrunn',
+                                        value: '#CCE1F3',
+                                    },
+                                ],
+                            },
                         },
                         {
                             name: 'publishedAt',
                             title: 'Publisert',
-                            type: 'datetime'
+                            type: 'datetime',
                         },
                         {
                             name: 'bodyContent',
                             title: 'Innhold',
-                            type: 'blockContent'
-                        }
+                            type: 'blockContent',
+                        },
                     ],
                     preview: {
                         select: {
                             title: 'title',
-                            content: 'bodyContent'
+                            content: 'bodyContent',
                         },
-                        prepare(selection){
+                        prepare(selection) {
                             const { title, content } = selection;
-                            const preview = title && title.length > 0 ? title : content[0].children[0].text;
+                            const preview =
+                                title && title.length > 0 ? title : content[0].children[0].text;
                             return {
                                 title: preview,
                                 media: FiEdit,
-                            }
+                            };
                         },
-                    }
-                }
+                    },
+                },
             ],
-
-        }
-    ]
-}
+        },
+    ],
+};

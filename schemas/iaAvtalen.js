@@ -1,4 +1,4 @@
-import { FiFolder, FiEdit } from "react-icons/fi";
+import { FiFolder, FiEdit } from 'react-icons/fi';
 
 export default {
     name: 'ia-avtalen',
@@ -9,22 +9,22 @@ export default {
         {
             name: 'mainImage',
             title: 'Dokument ikon',
-            type: 'image'
+            type: 'image',
         },
         {
             name: 'title',
             title: 'Tittel',
-            type: 'string'
+            type: 'string',
         },
         {
             name: 'priority',
             title: 'prioritet',
-            type: 'number'
+            type: 'number',
         },
         {
             name: 'body',
             title: 'Innhold',
-            type: 'blockContent'
+            type: 'blockContent',
         },
         {
             name: 'list',
@@ -34,7 +34,7 @@ export default {
                 {
                     name: 'title',
                     title: 'Tittel',
-                    type: 'string'
+                    type: 'string',
                 },
                 {
                     name: 'listElement',
@@ -48,25 +48,25 @@ export default {
                             fields: [
                                 {
                                     name: 'tekst',
-                                    type: 'blockContent'
-                                }
+                                    type: 'blockContent',
+                                },
                             ],
                             preview: {
                                 select: {
                                     title: 'tekst',
                                 },
-                                prepare(selection){
+                                prepare(selection) {
                                     const { title } = selection;
                                     return {
                                         title: title[0].children[0].text,
-                                        media: FiEdit
-                                    }
+                                        media: FiEdit,
+                                    };
                                 },
-                            }
-                        }
-                    ]
-                }
-            ]
-        }
+                            },
+                        },
+                    ],
+                },
+            ],
+        },
     ],
-}
+};

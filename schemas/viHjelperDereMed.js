@@ -1,7 +1,7 @@
 import React from 'react';
 import directionSign from '../img/direction-sign.svg';
-import { FiFolder, FiCheckCircle, FiEdit } from "react-icons/fi";
-import Thumbnail from "../utils/Thumbnail";
+import { FiFolder, FiCheckCircle, FiEdit } from 'react-icons/fi';
+import Thumbnail from '../utils/Thumbnail';
 
 export default {
     name: 'vi-hjelper-dere-med',
@@ -17,12 +17,12 @@ export default {
         {
             name: 'priority',
             title: 'prioritet',
-            type: 'number'
+            type: 'number',
         },
         {
             name: 'publishedAt',
             title: 'Publisert',
-            type: 'datetime'
+            type: 'datetime',
         },
         {
             name: 'checklist',
@@ -34,29 +34,28 @@ export default {
                     fields: [
                         {
                             name: 'checkpoint',
-                            type: 'string'
-                        }
+                            type: 'string',
+                        },
                     ],
                     preview: {
-                        select:{
+                        select: {
                             title: 'checkpoint',
                         },
-                        prepare(selection){
-                            const {title} = selection;
+                        prepare(selection) {
+                            const { title } = selection;
                             return {
                                 title: title,
                                 media: FiCheckCircle,
-                            }
+                            };
                         },
-                    }
-                }
+                    },
+                },
             ],
-
         },
         {
             name: 'content',
             title: 'Innhold',
-            type: 'blockContent'
+            type: 'blockContent',
         },
         {
             name: 'hovedliste',
@@ -72,26 +71,26 @@ export default {
                             title: 'Bilde',
                             type: 'image',
                             options: {
-                                hotspot: true
-                            }
+                                hotspot: true,
+                            },
                         },
                         {
                             name: 'publishedAt',
                             title: 'Publisert',
-                            type: 'datetime'
+                            type: 'datetime',
                         },
                         {
                             name: 'body',
                             title: 'Body',
-                            type: 'blockContent'
-                        }
+                            type: 'blockContent',
+                        },
                     ],
                     preview: {
                         select: {
                             media: 'iconImage',
-                            title: 'body'
-                        }
-                    }
+                            title: 'body',
+                        },
+                    },
                 },
             ],
         },
@@ -112,48 +111,48 @@ export default {
                             type: 'array',
                             of: [
                                 {
-                                    type: 'string'
-                                }
+                                    type: 'string',
+                                },
                             ],
                             options: {
                                 list: [
                                     {
-                                        title: 'Hvit bakgrunn', value: '#FFFFFF'
+                                        title: 'Hvit bakgrunn',
+                                        value: '#FFFFFF',
                                     },
                                     {
-                                        title: 'Blå bakgrunn', value: '#CCE1F3'
-                                    }
-                                ]
-                            }
+                                        title: 'Blå bakgrunn',
+                                        value: '#CCE1F3',
+                                    },
+                                ],
+                            },
                         },
                         {
                             name: 'publishedAt',
                             title: 'Publisert',
-                            type: 'datetime'
+                            type: 'datetime',
                         },
                         {
                             name: 'bodyContent',
                             title: 'Innhold',
-                            type: 'blockContent'
-                        }
+                            type: 'blockContent',
+                        },
                     ],
                     preview: {
                         select: {
-                            title: 'bodyContent'
+                            title: 'bodyContent',
                         },
-                        prepare(selection){
+                        prepare(selection) {
                             const { title } = selection;
                             return {
                                 title: title[0].children[0].text,
                                 media: FiEdit,
-                            }
+                            };
                         },
-                    }
-                }
+                    },
+                },
             ],
-
-        }
-
+        },
     ],
     orderings: [
         {
@@ -161,10 +160,11 @@ export default {
             name: 'rekkefølge på avsnitt',
             by: [
                 {
-                    field: 'priority', direction: 'asc'
-                }
-            ]
-        }
+                    field: 'priority',
+                    direction: 'asc',
+                },
+            ],
+        },
     ],
     preview: {
         select: {
@@ -174,9 +174,8 @@ export default {
             const { title } = selection;
             return {
                 title: title.split(':')[0],
-                media: <Thumbnail src={directionSign}/>
-            }
-        }
-
-    }
-}
+                media: <Thumbnail src={directionSign} />,
+            };
+        },
+    },
+};

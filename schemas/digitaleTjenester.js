@@ -8,27 +8,25 @@ export default {
             title: 'Dokument ikon',
             type: 'image',
             options: {
-                hotspot: true
-            }
+                hotspot: true,
+            },
         },
         {
             name: 'title',
             title: 'Tittel',
-            type: 'string'
+            type: 'string',
         },
         {
             name: 'priority',
             title: 'prioritet',
-            type: 'number'
+            type: 'number',
         },
         {
             name: 'hovedliste',
             title: 'Liste elementer',
             type: 'array',
             list: true,
-            of: [
-                {type: 'rad-element'}
-            ]
-        }
-    ]
-}
+            of: [{ type: 'rad-element' }],
+        },
+    ],
+};

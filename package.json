@@ -31,7 +31,9 @@
     "react-is": "^17.0.1",
     "webpack": "^5.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "^2.2.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/navikt/forebygge-sykefravaer-sanity.git"
