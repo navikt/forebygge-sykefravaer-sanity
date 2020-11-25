@@ -16,8 +16,14 @@ export default {
             type: 'string',
         },
         {
+            name: 'undertekstUtenKurs',
+            title:
+                'Alternativ tekst under tittel. Blir vist i stedet for feltet over hvis det ikke finnes noen IA-kurs',
+            type: 'string',
+        },
+        {
             name: 'lenke',
-            title: 'Lenke',
+            title: 'Lenke (blir ikke vist hvis det ikke finnes noen IA-kurs)',
             type: 'lenke',
             validation: (Rule) => Rule.required(),
         },
