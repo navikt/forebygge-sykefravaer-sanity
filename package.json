@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "Håvard Myrvold Johannessen <Havard.Myrvold.Johannessen@nav.no>",
+  "author": "@navikt/arbeidsgiver https://github.com/orgs/navikt/teams/arbeidsgiver",
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",
