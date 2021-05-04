@@ -7,32 +7,31 @@
   "author": "@navikt/arbeidsgiver https://github.com/orgs/navikt/teams/arbeidsgiver",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "sanity start",
-    "test": "sanity check"
+    "start": "sanity start"
   },
   "keywords": [
     "sanity"
   ],
   "dependencies": {
-    "@babel/core": "^7.12.16",
-    "@sanity/base": "^2.4.3",
+    "@babel/core": "^7.14.0",
+    "@sanity/base": "^2.10.0",
     "@sanity/color-input": "^2.2.6",
     "@sanity/components": "^2.2.6",
-    "@sanity/core": "^2.4.0",
-    "@sanity/default-layout": "^2.4.3",
-    "@sanity/default-login": "^2.2.6",
-    "@sanity/desk-tool": "^2.4.3",
-    "@sanity/vision": "^2.2.6",
-    "caniuse-lite": "^1.0.30001187",
-    "prop-types": "^15.6",
+    "@sanity/core": "^2.10.0",
+    "@sanity/default-layout": "^2.10.0",
+    "@sanity/default-login": "^2.8.0",
+    "@sanity/desk-tool": "^2.10.2",
+    "@sanity/vision": "^2.10.0",
+    "caniuse-lite": "^1.0.30001220",
+    "prop-types": "^15.7.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-icons": "^4.2.0",
-    "react-is": "^17.0.1",
-    "webpack": "^5.0.0"
+    "react-is": "^17.0.2",
+    "webpack": "^5.36.2"
   },
   "devDependencies": {
-    "prettier": "^2.2.0"
+    "prettier": "^2.2.1"
   },
   "repository": {
     "type": "git",
