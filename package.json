@@ -13,25 +13,25 @@
     "sanity"
   ],
   "dependencies": {
-    "@babel/core": "^7.14.0",
-    "@sanity/base": "^2.10.0",
+    "@babel/core": "^7.14.3",
+    "@sanity/base": "^2.10.5",
     "@sanity/color-input": "^2.2.6",
     "@sanity/components": "^2.2.6",
-    "@sanity/core": "^2.10.0",
-    "@sanity/default-layout": "^2.10.0",
-    "@sanity/default-login": "^2.8.0",
+    "@sanity/core": "^2.10.5",
+    "@sanity/default-layout": "^2.10.5",
+    "@sanity/default-login": "^2.10.5",
     "@sanity/desk-tool": "^2.10.2",
-    "@sanity/vision": "^2.10.0",
-    "caniuse-lite": "^1.0.30001220",
+    "@sanity/vision": "^2.10.5",
+    "caniuse-lite": "^1.0.30001235",
     "prop-types": "^15.7.2",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
     "react-is": "^17.0.2",
-    "webpack": "^5.36.2"
+    "webpack": "^5.38.1"
   },
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "prettier": "^2.3.1"
   },
   "repository": {
     "type": "git",
