@@ -14,14 +14,14 @@
   ],
   "dependencies": {
     "@babel/core": "^7.15.8",
-    "@sanity/base": "^2.21.7",
-    "@sanity/color-input": "^2.21.7",
+    "@sanity/base": "^2.27.0",
+    "@sanity/color-input": "^2.27.0",
     "@sanity/components": "^2.14.0",
-    "@sanity/core": "^2.21.7",
-    "@sanity/default-layout": "^2.21.7",
-    "@sanity/default-login": "^2.21.7",
-    "@sanity/desk-tool": "^2.21.7",
-    "@sanity/vision": "^2.21.7",
+    "@sanity/core": "^2.27.0",
+    "@sanity/default-layout": "^2.27.0",
+    "@sanity/default-login": "^2.27.0",
+    "@sanity/desk-tool": "^2.27.0",
+    "@sanity/vision": "^2.27.0",
     "caniuse-lite": "^1.0.30001272",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -39,6 +39,7 @@
     "url": "https://github.com/navikt/forebygge-sykefravaer-sanity.git"
   },
   "resolutions": {
+    "follow-redirects": "^1.14.8",
     "url-parse": "^1.5.6"
   }
 }
