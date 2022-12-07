@@ -68,7 +68,7 @@ export default {
                                     },
                                     {
                                         title: 'Blå bakgrunn',
-                                        value: '#CCE1F3',
+                                        value: '#E6F0FF',
                                     },
                                 ],
                             },
@@ -90,7 +90,7 @@ export default {
                                     },
                                     {
                                         title: 'Blå bakgrunn',
-                                        value: '#CCE1F3',
+                                        value: '#E6F0FF',
                                     },
                                 ],
                             },
